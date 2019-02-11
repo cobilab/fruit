@@ -1,0 +1,8 @@
+test.sh
+
+# **/CMakeFiles
+# src/**
+# script/**
+# CMake*
+# cmake*
+# Make*
