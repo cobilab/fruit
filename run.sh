@@ -121,7 +121,7 @@ if [[ $RUN_MUT_SYNTH -eq 1 ]]; then
     read watermark name size
     uniqCount=0
     while read begin end; do
-      uniqCount=$(($uniqCount+$((end-begin+1))))
+      uniqCount=$((uniqCount+end-begin+1))
     done
     uniqRatio=$(bc <<< "scale=5; $uniqCount/$size")
     printf '%.5f' "$uniqRatio" > $file.unr
@@ -197,7 +197,7 @@ if [[ $RUN_MUT_ANCIENT -eq 1 ]]; then
     read watermark name size
     uniqCount=0
     while read begin end; do
-      uniqCount=$(($uniqCount+$((end-begin+1))))
+      uniqCount=$((uniqCount+end-begin+1))
     done
     uniqRatio=$(bc <<< "scale=5; $uniqCount/$size")
     printf '%.5f' "$uniqRatio" > $file.unr
@@ -256,7 +256,7 @@ if [[ $RUN_MUT_ANCIENT -eq 1 ]]; then
     read watermark name size
     uniqCount=0
     while read begin end; do
-      uniqCount=$(($uniqCount+$((end-begin+1))))
+      uniqCount=$((uniqCount+end-begin+1))
     done
     uniqRatio=$(bc <<< "scale=5; $uniqCount/$size")
     printf '%.5f' "$uniqRatio" > $file.unr
@@ -315,7 +315,7 @@ if [[ $RUN_MUT_ANCIENT -eq 1 ]]; then
     read watermark name size
     uniqCount=0
     while read begin end; do
-      uniqCount=$(($uniqCount+$((end-begin+1))))
+      uniqCount=$((uniqCount+end-begin+1))
     done
     uniqRatio=$(bc <<< "scale=5; $uniqCount/$size")
     printf '%.5f' "$uniqRatio" > $file.unr
@@ -392,7 +392,7 @@ if [[ $RUN_HS -eq 1 ]]; then
     read watermark name size
     uniqCount=0
     while read begin end; do
-      uniqCount=$(($uniqCount+$((end-begin+1))))
+      uniqCount=$((uniqCount+end-begin+1))
     done
     uniqRatio=$(bc <<< "scale=5; $uniqCount/$size")
     printf '%.5f' "$uniqRatio" > $file.unr
