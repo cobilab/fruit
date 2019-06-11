@@ -109,7 +109,14 @@ DESCRIPTION
   -v                   more information
   -h                   usage guide
 ```
-`-i` stands for input(s). `-o` stands for output, and if is not determined by user, it will be named "map.svg", by default.
+`-i` stands for input(s). `-o` stands for output, and if is not determined by user, it will be named "map.svg".
+
+## Experiments
+To replicate the results presented in the paper, run the bash script *run.sh*, provided in the "script/" directory. Note that to generate the synthetic datasets, we have used the "mutate" tool, available in "prog/" directory, in order to mutate an input sequence with a specific rate. For example, the following command takes 50 as the seed, mutates the "input_seq" with the rate of 10%, and writes the result into "mutated_seq":
+```bash
+./mutate -s 50 -r 10 -i input_seq -o mutated_seq
+```
+`-s`, `-r`, `-i` and `-o` stand for seed, rate, input and output, respectively.
 
 <!-- ## Example -->
 
@@ -124,7 +131,7 @@ install the other tools, run all the tools, and finally, visualize the results. 
 
 ## CITE
 Please cite the following, if you use **FRUIT**:
-* In process ...
+* M. Hosseini, D. Pratas and A.J. Pinho, ``A Probabilistic Method to Find and Visualize Distinct Regions in Protein Sequences,'' *27th European Signal Processing Conference (EUSIPCO)*, pp. -, IEEE, 2019.
 
 <!-- ## RELEASES
 * [Release](https://github.com/smortezah/fruit/releases) 1: . -->
