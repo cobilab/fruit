@@ -116,7 +116,7 @@ To replicate the results presented in the paper, run the bash script *run.sh*, p
 ```bash
 ./mutate -s 50 -r 10 -i input_seq -o mutated_seq
 ```
-`-s`, `-r`, `-i` and `-o` stand for seed, rate, input and output, respectively.
+`-s`, `-r`, `-i` and `-o` stand for seed, rate, input and output, respectively. Consider the input_seq as ACG**T**ACGTAC, the mutated_seq might be ACG**C**ACGTAC, that is 10% of the symbols (1 out of 10) has been mutated.
 
 <!-- ## Example -->
 
