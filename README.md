@@ -1,7 +1,5 @@
-# FRUIT
+# FRUIT &nbsp;&nbsp;&nbsp;&nbsp; [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](LICENSE)
 Fast Relative Uniqueness fInder for proTein sequences
-
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](LICENSE)
 
 ## RUN
 FRUIT includes three tools: `fruit-map`, `fruit-filter` and `fruit-visual`.
