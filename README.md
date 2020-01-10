@@ -130,10 +130,3 @@ install the other tools, run all the tools, and finally, visualize the results. 
 ## CITE
 Please cite the following, if you use **FRUIT**:
 * M. Hosseini, D. Pratas and A.J. Pinho, ``A Probabilistic Method to Find and Visualize Distinct Regions in Protein Sequences,'' *27th European Signal Processing Conference* (*EUSIPCO*), pp. 1-5, IEEE, 2019.
-
-<!-- ## RELEASES
-* [Release](https://github.com/smortezah/fruit/releases) 1: . -->
-
-## ISSUES
-Please let us know if there is any 
-[issues](https://github.com/smortezah/fruit/issues).
